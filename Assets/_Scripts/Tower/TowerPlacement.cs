@@ -17,6 +17,7 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] RectTransform confirmPanel;
     public WeaponType towerSelected = WeaponType.none;
     int towerPrice;
+    [SerializeField] bool firstTower = false;
 
     //used by main twr button to enable tower selection panel 
     public void clickTowerBtnMain()

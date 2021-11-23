@@ -16,9 +16,14 @@ public class WeaponController : MonoBehaviour
     public GameObject weaponGO;
     SphereCollider sphereCollider;
     Animator attackAnimator;
+    [SerializeField] bool firstTower = false;
+
     private void Awake()
     {
         sphereCollider = GetComponent<SphereCollider>();
+
+        if (firstTower)
+            SetWeapon(typeSelected);
     }
 
     public void ChangeTargetOfActiveBullets()
@@ -55,7 +60,7 @@ public class WeaponController : MonoBehaviour
             pos = 1.55f;
         weaponGO = Instantiate(currentWeapon.weaponPrefab, transform.position + new Vector3(0, pos, 0), Quaternion.identity, transform);
         attackAnimator = weaponGO.GetComponent<Animator>();
-
+        attackAnimator.SetFloat("AttackSpeed", currentWeapon.attackSpeed);
         //assign to anim shooting 
         weaponGO.GetComponent<AnimShooting>().weaponController = this;
         weaponGO.GetComponent<AnimShooting>().currentWeapon = currentWeapon;
@@ -63,12 +68,17 @@ public class WeaponController : MonoBehaviour
 
     private void Update()
     {
+        if (firstTower)
+            RotationByButton();
+
         if (typeSelected != WeaponType.none && GetComponent<BasicTower>().planted)
             AttackControl();
     }
-
     void AttackControl()
     {
+        if (firstTower)
+            return;
+
         //if weapon has target rotate it towards it
         if (currentTarget != null )
         {
@@ -123,4 +133,45 @@ public class WeaponController : MonoBehaviour
         var rotation = Quaternion.LookRotation(lookPos);
         weaponGO.transform.rotation = Quaternion.Slerp(weaponGO.transform.rotation, rotation, Time.deltaTime * rotateSpeed);
     }
+
+
+
+    #region ButtonControl turret
+    public void AttackViaButton()
+    {
+        if (attackAnimator != null && currentTarget != null)
+        {
+            attackAnimator.SetTrigger("AttackTrigger");
+        }
+    }
+
+    float maxButtonRotation = 157f;
+    float buttonRotation = 0;
+
+    bool rotateR = false;
+    bool rotateL = false;
+
+    public void RotationByButton()
+    {
+//        transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime);
+
+        weaponGO.transform.Rotate(Vector3.up * buttonRotation * Time.deltaTime);
+    }
+
+    public void RotateRViaButton()
+    {
+        buttonRotation = maxButtonRotation;
+
+    }
+    public void RotateLViaButton()
+    {
+        buttonRotation = -maxButtonRotation;
+    }
+
+    public void StopRotateViaButton()
+    {
+        buttonRotation = 0;
+    }
+    #endregion
+
 }

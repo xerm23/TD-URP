@@ -5,11 +5,6 @@ using UnityEngine;
 public class BlasterShooting : AnimShooting
 {
     public GameObject[] bulletRef;
-    private void Start()
-    {
-        GetComponent<Animator>().SetFloat("AttackSpeed", currentWeapon.attackSpeed);
-    }
-
     public void AnimShoot0()
     {
         GameObject newBullet = Instantiate(bulletRef[0], this.transform, true);

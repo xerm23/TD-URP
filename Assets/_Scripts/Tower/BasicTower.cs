@@ -30,8 +30,6 @@ public class BasicTower : MonoBehaviour
     public int towerLevel = 0;
     public bool planted = false;
     [SerializeField] GameObject radiusIndicator;
-    [SerializeField] GameObject canvasConfirm;
-
 
     public void TowerPlanted()
     {

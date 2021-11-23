@@ -15,4 +15,4 @@ MonoBehaviour:
   type: 1
   weaponPrefab: {fileID: 6136932872643106416, guid: 9eb623b7d69bd284bacb07adb4601b8f, type: 3}
   range: 6
-  attackSpeed: 25
+  attackSpeed: 1.5

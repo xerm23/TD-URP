@@ -92,6 +92,7 @@
     <Compile Include="Assets\PathCreator\Examples\Scripts\RoadMeshCreator.cs" />
     <Compile Include="Assets\PathCreator\Examples\Scripts\CylinderMeshCreator.cs" />
     <Compile Include="Assets\_Scripts\Weapon\TargetController.cs" />
+    <Compile Include="Assets\_Scripts\Enemies\RotateWorldCanvas.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

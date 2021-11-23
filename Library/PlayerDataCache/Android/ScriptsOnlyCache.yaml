@@ -17,12 +17,12 @@ ScriptsOnlyBuild:
     - ObjectPooler
     - PathCreation.Examples.PathFollower
     - RTS_Cam.RTS_Camera
+    - RotateWorldCanvas
     - TargetController
     - TowerPlacement
     - WeaponController
     - WeaponScriptable
     PathCreator.dll:
-    - PathCreation.GlobalDisplaySettings
     - PathCreation.PathCreator
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -81,6 +81,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
@@ -152,51 +153,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2544}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 2938}
     - Class: 114
-      Script: {instanceID: 3120}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3324}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3394}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 3874}
+      Script: {instanceID: 3870}
     - Class: 114
-      Script: {instanceID: 3966}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 4042}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4132}
     - Class: 114
-      Script: {instanceID: 4230}
+      Script: {instanceID: 4226}
     - Class: 114
-      Script: {instanceID: 4572}
+      Script: {instanceID: 4568}
     - Class: 114
-      Script: {instanceID: 4650}
+      Script: {instanceID: 4646}
     - Class: 114
-      Script: {instanceID: 4672}
+      Script: {instanceID: 4668}
     - Class: 114
-      Script: {instanceID: 4894}
+      Script: {instanceID: 4890}
     - Class: 114
-      Script: {instanceID: 5276}
+      Script: {instanceID: 4990}
     - Class: 114
-      Script: {instanceID: 5486}
+      Script: {instanceID: 5272}
     - Class: 114
-      Script: {instanceID: 5518}
+      Script: {instanceID: 5482}
     - Class: 114
-      Script: {instanceID: 5748}
+      Script: {instanceID: 5514}
     - Class: 114
-      Script: {instanceID: 6382}
+      Script: {instanceID: 5744}
     - Class: 114
-      Script: {instanceID: 6540}
+      Script: {instanceID: 6378}
     - Class: 114
-      Script: {instanceID: 6588}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 6874}
+      Script: {instanceID: 6584}
+    - Class: 114
+      Script: {instanceID: 6868}
+    - Class: 114
+      Script: {instanceID: 166880}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -279,71 +284,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2558}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2936}
+      Script: {instanceID: 2934}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 2968}
     - Class: 114
-      Script: {instanceID: 3120}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3324}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3384}
     - Class: 114
-      Script: {instanceID: 3396}
+      Script: {instanceID: 3394}
     - Class: 114
-      Script: {instanceID: 3526}
+      Script: {instanceID: 3522}
     - Class: 114
-      Script: {instanceID: 3534}
+      Script: {instanceID: 3530}
     - Class: 114
-      Script: {instanceID: 3692}
+      Script: {instanceID: 3688}
     - Class: 114
-      Script: {instanceID: 3762}
+      Script: {instanceID: 3758}
     - Class: 114
-      Script: {instanceID: 3822}
+      Script: {instanceID: 3818}
     - Class: 114
-      Script: {instanceID: 3966}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 3968}
+      Script: {instanceID: 3964}
     - Class: 114
-      Script: {instanceID: 4114}
+      Script: {instanceID: 4110}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4132}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 4328}
     - Class: 114
-      Script: {instanceID: 4362}
+      Script: {instanceID: 4358}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 4396}
+    - Class: 114
+      Script: {instanceID: 4490}
     - Class: 114
       Script: {instanceID: 4494}
     - Class: 114
-      Script: {instanceID: 4498}
+      Script: {instanceID: 4568}
     - Class: 114
-      Script: {instanceID: 4572}
+      Script: {instanceID: 4686}
     - Class: 114
-      Script: {instanceID: 4690}
+      Script: {instanceID: 4862}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 5350}
     - Class: 114
-      Script: {instanceID: 5354}
+      Script: {instanceID: 5532}
     - Class: 114
-      Script: {instanceID: 5536}
+      Script: {instanceID: 5586}
     - Class: 114
-      Script: {instanceID: 5590}
+      Script: {instanceID: 5736}
     - Class: 114
-      Script: {instanceID: 5740}
+      Script: {instanceID: 6020}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 6068}
     - Class: 114
-      Script: {instanceID: 6072}
+      Script: {instanceID: 6190}
     - Class: 114
-      Script: {instanceID: 6194}
+      Script: {instanceID: 6304}
     - Class: 114
-      Script: {instanceID: 6308}
-    - Class: 114
-      Script: {instanceID: 6472}
+      Script: {instanceID: 6468}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -507,7 +512,7 @@ ScriptsOnlyBuild:
     className: GeneratePathExample
   - hash:
       serializedVersion: 2
-      Hash: 4fbc33ef395a13f40b51cc8439405d84
+      Hash: f27e8cbd42e6ab940958c6452b7ed993
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeaponController
@@ -585,7 +590,7 @@ ScriptsOnlyBuild:
     className: ColorCurves
   - hash:
       serializedVersion: 2
-      Hash: 15351aa7a4880f8ac001c29fcdf76bad
+      Hash: 87aaf220db1f09d37ee697a080f3ca4d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BasicTower
@@ -951,7 +956,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: d8f384034146e028a261adbdf090e49a
+      Hash: 591338d7adc50ab638ab9347603d1dec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnimShooting
@@ -975,7 +980,7 @@ ScriptsOnlyBuild:
     className: DraggingOnScreen
   - hash:
       serializedVersion: 2
-      Hash: 064337acbf16d84e289eb1024531a612
+      Hash: 2b31c020c110e7eac692f1fb597b55be
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BlasterShooting
@@ -1035,7 +1040,7 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 6c852571c7bb3fcad393be925d0ec5d1
+      Hash: 6c667dd7eda19633e3bd5102b0a62637
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BallistaShooting
@@ -1317,7 +1322,7 @@ ScriptsOnlyBuild:
     className: BulletController
   - hash:
       serializedVersion: 2
-      Hash: 5a5f8aabcffd21b9af1ceba77c1fe3af
+      Hash: 368df238c97c8b8df3acac6c1c7f88c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TowerPlacement
@@ -1363,8 +1368,14 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TargetController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotateWorldCanvas
   platform: 13
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Unity Projects/towerdefense.apk
+  playerPath: D:/Unity Projects/TD-URP/towerdefense.apk
